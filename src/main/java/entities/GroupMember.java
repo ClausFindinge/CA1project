@@ -13,7 +13,7 @@ import javax.persistence.NamedQuery;
 
 /**
  *
- * @author Christian
+ * @author Claus
  */
 @Entity
 @NamedQuery(name = "GroupMember.deleteAllRows", query = "DELETE from GroupMember")

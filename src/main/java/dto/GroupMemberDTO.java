@@ -9,7 +9,7 @@ import entities.GroupMember;
 
 /**
  *
- * @author Christian
+ * @author Claus
  */
 public class GroupMemberDTO {
     private Long id;

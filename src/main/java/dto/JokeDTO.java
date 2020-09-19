@@ -13,7 +13,7 @@ import javax.persistence.Id;
 
 /**
  *
- * @author Bruger
+ * @author Claus
  */
 @Entity
 public class JokeDTO implements Serializable {

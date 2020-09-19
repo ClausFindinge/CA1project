@@ -9,7 +9,7 @@ import entities.Car;
 
 /**
  *
- * @author Brandstrup
+ * @author Claus
  */
 public class CarDTO
 {
