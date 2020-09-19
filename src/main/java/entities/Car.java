@@ -17,7 +17,7 @@ import javax.persistence.TemporalType;
 
 /**
  *
- * @author Brandstrup
+ * @author Claus
  */
 @Entity
 @NamedQuery(name = "Car.deleteAllRows", query = "DELETE from Car")
@@ -36,6 +36,7 @@ public class Car implements Serializable
     private String owner;
     private String color;
     private FuelType fuel;
+    private String hello;
 
     public enum FuelType
     {
