@@ -1,5 +1,8 @@
 package facades;
 
+import dto.CarDTO;
+import dto.JokeDTO;
+import entities.Joke;
 import entities.RenameMe;
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -7,6 +10,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 
 
 public class JokeFacade
@@ -61,6 +65,26 @@ public class JokeFacade
             em.close();
         }
         
-    }
+    }}
 
-}
+//    List<JokeDTO> getAllJokes(){
+//        TypedQuery<JokeDTO> query = emf.createQuery("SELECT p FROM Point p", JokeDTO.class);
+//        List<JokeDTO> results = query.getResultList();
+//        for (JokeDTO j : results) {
+//          results.add(new JokeDTO(j));
+//        }
+//             return results;
+//        }
+//        catch (Exception ex)
+//        {
+//            System.out.println("getAllJokes not found");
+//            return null;
+//        }
+//        finally
+//        {
+//            emf.close();
+//        }
+//       
+//
+//    }
+
