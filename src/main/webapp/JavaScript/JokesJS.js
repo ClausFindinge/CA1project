@@ -3,7 +3,7 @@ const table = document.getElementById("jokeTable");
 
 function populateTable()
 {
-    let urlAll = "/2020CA1/api/jokes/all";
+    let urlAll = "/jpa-rest/api/jokes/id";
 
     fetch(urlAll)
             .then(res => res.json())
