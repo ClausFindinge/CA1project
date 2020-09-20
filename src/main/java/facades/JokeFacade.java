@@ -86,12 +86,26 @@ try {
         }
     }
     
-   
+       public Joke findJoke(int id){
+         EntityManager em = emf.createEntityManager();
+        try{
+            Joke joke = em.find(Joke.class,id);
+            return joke;}
+            catch (Exception ex)
+        {
+            System.out.println("No jokes were found.");
+            return null;
+        
+        }finally {
+            em.close();
+        }}
+
+     
     List<JokeDTO> getAllJokes(){
         EntityManager em = emf.createEntityManager();
         try{
             
-               List<JokeDTO> results = new ArrayList<>();
+        List<JokeDTO> results = new ArrayList<>();
         TypedQuery<Joke> query = em.createQuery("SELECT p FROM Point p", Joke.class);
      
         for (Joke j : query.getResultList()) {
